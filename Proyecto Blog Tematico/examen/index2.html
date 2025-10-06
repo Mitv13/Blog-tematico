@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Anime</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #c3bac7;
+    }
+    .navbar {
+      background: #793726;
+    }
+    .navbar-brand, .nav-link {
+      color: rgb(243, 18, 18) !important;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #86075c !important;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      background: rgba(173, 32, 13, 0.8);
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-title {
+      color: #6a0dad;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="LOGOANIME.png" alt="" height="30" width="30"> Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Mas populares</h2>
+    <div class="row g-4">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="image.png" class="card-img-top" alt="Naruto">
+          <div class="card-body">
+            <h5 class="card-title">Naruto Shippuden</h5>
+            <p class="card-text">Descubre la evolución de Naruto y cómo marcó a toda una generación.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="https://cdn.myanimelist.net/images/anime/1517/100633.jpg" class="card-img-top" alt="Kimetsu no Yaiba">
+          <div class="card-body">
+            <h5 class="card-title">Kimetsu no Yaiba</h5>
+            <p class="card-text">Análisis de la animación, personajes y lo que hace única a esta obra de Ufotable.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="https://cdn.myanimelist.net/images/anime/1988/113791.jpg" class="card-img-top" alt="Attack on Titan">
+          <div class="card-body">
+            <h5 class="card-title">Attack on Titan</h5>
+            <p class="card-text">Reflexión sobre la épica historia de libertad y supervivencia creada por Isayama.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 4 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="https://cdn.myanimelist.net/images/anime/1522/128039.jpg" class="card-img-top" alt="Jujutsu Kaisen">
+          <div class="card-body">
+            <h5 class="card-title">Jujutsu Kaisen</h5>
+            <p class="card-text">El fenómeno moderno del shonen con increíbles batallas y animación fluida.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 5 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" class="card-img-top" alt="One Piece">
+          <div class="card-body">
+            <h5 class="card-title">One Piece</h5>
+            <p class="card-text">Más de 1000 episodios de aventuras, misterios y amistad en la obra de Oda.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta 6 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="https://cdn.myanimelist.net/images/anime/1732/109222.jpg" class="card-img-top" alt="My Hero Academia">
+          <div class="card-body">
+            <h5 class="card-title">My Hero Academia</h5>
+            <p class="card-text">El camino de Deku hacia convertirse en el héroe más grande de todos los tiempos.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
